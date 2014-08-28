@@ -1,0 +1,52 @@
+2013-11-06 02:43:54,635 INFO  [bm.server.EventController] [bm_share.run_1383702227802-Controller] 	Event processing started: bm_share.run_1383702227802 (512 events per second using 128 threads)
+2013-11-06 02:43:54,690 INFO  [bm.server.EventController] [bm_share.run_1383702227802-Controller] 	Event processing stopped: bm_share.run_1383702227802
+2013-11-06 02:46:07,867 INFO  [bm.server.EventController] [bm_share.run_1383702365573-Controller] 	Event processing started: bm_share.run_1383702365573 (512 events per second using 128 threads)
+2013-11-06 02:46:07,923 INFO  [bm.server.EventController] [bm_share.run_1383702365573-Controller] 	Event processing stopped: bm_share.run_1383702365573
+2013-11-06 02:49:17,988 INFO  [bm.server.EventController] [bm_share.run_1383702555511-Controller] 	Event processing started: bm_share.run_1383702555511 (512 events per second using 128 threads)
+2013-11-06 02:49:18,043 INFO  [bm.server.EventController] [bm_share.run_1383702555511-Controller] 	Event processing stopped: bm_share.run_1383702555511
+2013-11-06 03:06:54,708 INFO  [bm.server.EventController] [bm_share.run_1383703612247-Controller] 	Event processing started: bm_share.run_1383703612247 (512 events per second using 128 threads)
+2013-11-06 03:06:54,761 INFO  [bm.server.EventController] [bm_share.run_1383703612247-Controller] 	Event processing stopped: bm_share.run_1383703612247
+2013-11-06 03:11:29,030 INFO  [bm.server.EventController] [bm_share.run_1383703881781-Controller] 	Event processing started: bm_share.run_1383703881781 (512 events per second using 128 threads)
+2013-11-06 03:11:29,084 INFO  [bm.server.EventController] [bm_share.run_1383703881781-Controller] 	Event processing stopped: bm_share.run_1383703881781
+2013-11-06 03:20:10,441 INFO  [bm.server.EventController] [bm_ent_signup.run_1383704409143-Controller] 	Event processing started: bm_ent_signup.run_1383704409143 (16 events per second using 4 threads)
+2013-11-06 03:20:42,161 ERROR [bm.server.EventController] [bm_ent_signup.run_1383704409143-Controller] 	Event processing terminated with error: bm_ent_signup.run_1383704409143
+org.springframework.dao.DataAccessResourceFailureException: can't call something : /127.0.0.1:27017/test; nested exception is com.mongodb.MongoException$Network: can't call something : /127.0.0.1:27017/test
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:56)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:1644)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:1507)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFindAndModify(MongoTemplate.java:1435)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAndModify(MongoTemplate.java:569)
+	at org.springframework.data.mongodb.core.MongoTemplate.findAndModify(MongoTemplate.java:560)
+	at org.alfresco.bm.event.mongo.MongoEventService.nextEvent(MongoEventService.java:143)
+	at org.alfresco.bm.server.EventController.runImpl(EventController.java:281)
+	at org.alfresco.bm.server.EventController.run(EventController.java:215)
+Caused by: com.mongodb.MongoException$Network: can't call something : /127.0.0.1:27017/test
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:284)
+	at com.mongodb.DBApiLayer$MyCollection.__find(DBApiLayer.java:289)
+	at com.mongodb.DB.command(DB.java:259)
+	at com.mongodb.DB.command(DB.java:241)
+	at com.mongodb.DB.command(DB.java:282)
+	at com.mongodb.DB.command(DB.java:196)
+	at com.mongodb.DBCollection.findAndModify(DBCollection.java:374)
+	at org.springframework.data.mongodb.core.MongoTemplate$FindAndModifyCallback.doInCollection(MongoTemplate.java:1782)
+	at org.springframework.data.mongodb.core.MongoTemplate$FindAndModifyCallback.doInCollection(MongoTemplate.java:1764)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:1503)
+	... 6 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:196)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:275)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at org.bson.io.Bits.readFully(Bits.java:46)
+	at org.bson.io.Bits.readFully(Bits.java:33)
+	at org.bson.io.Bits.readFully(Bits.java:28)
+	at com.mongodb.Response.<init>(Response.java:40)
+	at com.mongodb.DBPort.go(DBPort.java:124)
+	at com.mongodb.DBPort.call(DBPort.java:74)
+	at com.mongodb.DBTCPConnector.call(DBTCPConnector.java:275)
+	... 15 more
+2013-11-06 03:22:23,686 INFO  [bm.server.EventController] [bm_ent_signup.run_1383704542416-Controller] 	Event processing started: bm_ent_signup.run_1383704542416 (16 events per second using 4 threads)
+2013-11-06 03:22:37,093 INFO  [bm.server.EventController] [bm_ent_signup.run_1383704542416-Controller] 	Event processing stopped: bm_ent_signup.run_1383704542416
+2013-11-06 03:24:20,754 INFO  [bm.server.EventController] [bm_share.run_1383704658800-Controller] 	Event processing started: bm_share.run_1383704658800 (512 events per second using 128 threads)
+2013-11-06 03:24:20,755 INFO  [bm.server.EventController] [bm_share.run_1383704658800-Controller] 	Event processing stopped: bm_share.run_1383704658800

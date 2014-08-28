@@ -1,0 +1,8 @@
+2013-11-07 12:48:31,833 INFO  [bm.server.EventController] [bm_share.run_1383824909400-Controller] 	Event processing started: bm_share.run_1383824909400 (512 events per second using 128 threads)
+2013-11-07 12:48:31,881 INFO  [bm.server.EventController] [bm_share.run_1383824909400-Controller] 	Event processing stopped: bm_share.run_1383824909400
+2013-11-07 12:57:28,397 INFO  [bm.server.EventController] [bm_share.run_1383825446065-Controller] 	Event processing started: bm_share.run_1383825446065 (512 events per second using 128 threads)
+2013-11-07 12:57:28,443 INFO  [bm.server.EventController] [bm_share.run_1383825446065-Controller] 	Event processing stopped: bm_share.run_1383825446065
+2013-11-07 12:59:00,997 INFO  [bm.server.EventController] [bm_share.run_1383825538465-Controller] 	Event processing started: bm_share.run_1383825538465 (512 events per second using 128 threads)
+2013-11-07 12:59:01,047 INFO  [bm.server.EventController] [bm_share.run_1383825538465-Controller] 	Event processing stopped: bm_share.run_1383825538465
+2013-11-07 13:05:09,967 INFO  [bm.server.EventController] [bm_share.run_1383825903564-Controller] 	Event processing started: bm_share.run_1383825903564 (16 events per second using 4 threads)
+2013-11-07 13:06:14,858 INFO  [bm.server.EventController] [bm_share.run_1383825903564-Controller] 	Event processing stopped: bm_share.run_1383825903564
